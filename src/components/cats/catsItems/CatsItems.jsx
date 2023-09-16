@@ -1,25 +1,28 @@
-import React, { useState } from 'react';
-// scss
-import styles from "./scss/catsitems.module.scss";
+import React, {useState} from 'react';
 
-const CatsItems = ({ cat: { url } }) => {
-  const [fullScrren, setFullScrren] = useState('');
+import styles from './scss/catsitems.module.scss';
 
-  return <>
-    <div className={styles.cats_block}>
-      <img src={url} alt="cats" onClick={() => setFullScrren(url)} />
-    </div>
+const CatsItems = ({cat: {url}}) => {
+	const [fullScrren, setFullScrren] = useState('');
 
-    {
-      fullScrren && <div className={styles.cats_full_screen_wrapper}>
-        <div className={styles.cats_full_screen_block}>
-          <img src={fullScrren} alt="cats" />
-          <button onClick={() => setFullScrren("")} className={styles.close_btn}>X</button>
-        </div>
-      </div>
-    }
-  </>
+	return (
+		<>
+			<div className={styles.cats_block}>
+				<img src={url} alt='cats' onClick={() => setFullScrren(url)} loading='lazy' />
+			</div>
 
-}
+			{fullScrren && (
+				<div className={styles.cats_full_screen_wrapper}>
+					<div className={styles.cats_full_screen_block}>
+						<img src={fullScrren} alt='cats' />
+						<button onClick={() => setFullScrren('')} className={styles.close_btn}>
+							X
+						</button>
+					</div>
+				</div>
+			)}
+		</>
+	);
+};
 
 export default CatsItems;
