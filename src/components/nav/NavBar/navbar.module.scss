@@ -1,0 +1,14 @@
+@import "../../../assets/scss/variabels.scss";
+
+nav {
+  padding: 2rem;
+
+  .list_block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+
+  }
+
+}

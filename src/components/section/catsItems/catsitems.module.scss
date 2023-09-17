@@ -1,0 +1,19 @@
+@import "../../../assets/scss/variabels.scss";
+
+.cats_block {
+  border: 1px solid $primary-color;
+  border-radius: 5px;
+  padding: 1rem;
+
+  img {
+    width: 250px;
+    height: 250px;
+    cursor: pointer;
+    transition: 0.9s;
+
+    &:hover {
+      transform: scale(1.1);
+
+    }
+  }
+}

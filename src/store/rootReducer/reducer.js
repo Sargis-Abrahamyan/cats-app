@@ -34,7 +34,7 @@ export const rootReducer = (state = initialState, { type, payload }) => {
                 loading: payload
             }
         }
-        
+
         default: return state;
     }
 }

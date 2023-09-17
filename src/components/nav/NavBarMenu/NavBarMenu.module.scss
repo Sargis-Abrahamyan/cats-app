@@ -1,0 +1,24 @@
+@import "../../../assets/scss/variabels.scss";
+
+.list_items {
+  list-style-type: none;
+  font: 700 20px/16px $body-fonts;
+  border: 1px solid $primary-color;
+  padding: 10px;
+  border-radius: 5px;
+
+  a {
+    text-decoration: none;
+    color: $primary-color;
+    transition: 0.9s;
+
+    &:hover {
+      color: $yellow-color;
+    }
+  }
+
+  .active {
+    color: $yellow-color;
+  }
+
+}
