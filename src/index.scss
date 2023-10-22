@@ -1,33 +1,33 @@
-@import "./assets/scss/variabels.scss";
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import './assets/scss/variabels.scss';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 *,
 ::after,
 ::before {
-    margin: 0;
-    padding: 0;
-    outline: 0;
-    border: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  box-sizing: border-box;
 }
 
 body {
-    width: 100%;
-    font-family: "Roboto", sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    background-color: $body-color;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: $body-color;
 }
 
 ::-webkit-scrollbar {
-    width: 10px;
+  width: 10px;
 }
 
 ::-webkit-scrollbar-track {
-    background: #0d1117;
+  background: #0d1117;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: $primary-color;
-    border-radius: 4px;
+  background: $primary-color;
+  border-radius: 4px;
 }
