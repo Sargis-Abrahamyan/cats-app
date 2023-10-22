@@ -1,0 +1,24 @@
+.main_container {
+  max-width: 1130px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 3rem;
+}
+.main_container .main_list_wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+.main_container .add_cats_btn {
+  width: 110px;
+  height: 50px;
+  margin: 2rem auto;
+  border-radius: 5px;
+  background-color: #61dafb;
+  cursor: pointer;
+  font: 500 20px/10px Roboto;
+}/*# sourceMappingURL=cats.module.css.map */
