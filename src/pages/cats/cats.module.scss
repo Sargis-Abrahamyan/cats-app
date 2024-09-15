@@ -1,0 +1,15 @@
+@import '../../assets/scss/variabels.scss';
+
+.main_container {
+  width: 100%; // Make the grid stretch to the full container width
+  max-width: 1440px;
+  margin: auto;
+  padding-bottom: 3rem;
+
+  .main_list_wrapper {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+  }
+}

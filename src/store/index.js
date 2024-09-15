@@ -1,13 +1,9 @@
-import { createStore, applyMiddleware, compose, } from "redux";
-import thunk from "redux-thunk";
-import { rootReducer } from "./rootReducer/rootReducer";
+import { createStore, applyMiddleware } from 'redux';
+import thunk from 'redux-thunk'; // Middleware for handling async actions
+import { rootReducer } from './rootReducer'; // Import the combined reducers
 
-export const configureStore = () => {
-    const middlewares = [thunk];
-    const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
-    const enhancers = composeEnhancers(applyMiddleware(...middlewares));
-    const store = createStore(rootReducer, enhancers);
-
-    return store;
-}
-
+// Create the Redux store
+export const store = createStore(
+  rootReducer, // Root reducer containing combined reducers
+  applyMiddleware(thunk), // Applying middleware for async actions
+);
